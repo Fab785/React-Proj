@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color: black;
+  color: red;
 }
 
 body {
@@ -362,6 +362,51 @@ section {
 .search-button:hover {
     background-color: #5200b5;
 }
+
+/* DETAILS */
+
+.movie-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-detail h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .movie-detail img {
+    width: 250px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .movie-detail p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+  }
+  
+  .back-btn:hover {
+    color: #0056b3;
+  }
+  
 
 
 /* SPINNER */

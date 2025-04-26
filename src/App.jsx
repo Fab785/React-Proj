@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
 import newLogo from './assets/undraw_home-cinema_jdm1.svg';
@@ -96,14 +97,9 @@ const App = () => {
                         <h3>
                           {movie.Title} ({movie.Year})
                         </h3>
-                        <a
-                          href={`https://www.imdb.com/title/${movie.imdbID}`}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="imdb-link"
-                        >
-                          View on IMDb
-                        </a>
+                        <Link to={`/movie/${movie.imdbID}`} className="imdb-link">
+                          View Details
+                        </Link>
                       </div>
                     ))
                   ) : (
@@ -129,22 +125,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
